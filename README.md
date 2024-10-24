@@ -1,4 +1,4 @@
-```markdown
+
 # Stock Market Prediction with Transformer and LSTM Models
 
 This repository contains a Jupyter Notebook that implements and compares Transformer and Long Short-Term Memory (LSTM) models for stock market prediction, focusing on the historical stock prices of Apple (AAPL) and Microsoft (MSFT).
@@ -14,7 +14,7 @@ The repository contains the following files:
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/stock-market-prediction.git
+   git clone https://github.com/Grandediw/stock-market-prediction.git
    cd stock-market-prediction
    ```
 
