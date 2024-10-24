@@ -53,5 +53,3 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - Stefano Tonini
 - Jacopo Dallafior
 ```
-
-You can copy and paste this directly into your repository's `README.md` file. Let me know if you need any more adjustments!
