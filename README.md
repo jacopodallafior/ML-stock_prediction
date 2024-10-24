@@ -1,34 +1,14 @@
 ```markdown
-# Stock Market Prediction with LSTM and Transformer Models
+# Stock Market Prediction with Transformer and LSTM Models
 
-This repository contains the code and methodology for comparing Long Short-Term Memory (LSTM) networks and Transformer-based models in predicting stock prices. The goal of this project is to enhance stock market forecasting by evaluating these machine learning models on historical stock data.
+This repository contains a Jupyter Notebook that implements and compares Transformer and Long Short-Term Memory (LSTM) models for stock market prediction, focusing on the historical stock prices of Apple (AAPL) and Microsoft (MSFT).
 
 ## Project Structure
 
-The project is organized as follows:
+The repository contains the following files:
 
-```
-- src/
-  - lstm_model.py
-  - transformer_model.py
-
-- README.md
-- requirements.txt
-- data/
-  - stock_data.csv
-```
-
-### 1. `src/`
-This folder contains all the Python scripts for the project:
-- **`data_preprocessing.py`**: Script for data collection, cleaning, and preprocessing of stock data.
-- **`lstm_model.py`**: LSTM model architecture for stock price forecasting.
-- **`transformer_model.py`**: Transformer model architecture adapted for time series forecasting.
-- **`train.py`**: Script for training both LSTM and Transformer models.
-- **`evaluation.py`**: Script for evaluating models using RMSE and MAPE.
-
-### 2. `data/`
-This folder contains the dataset used in the project:
-- **`stock_data.csv`**: Historical stock data for Apple (AAPL) and Microsoft (MSFT), retrieved using the yfinance library.
+- **`Transformers_model_01.ipynb`**: A Jupyter Notebook that implements the machine learning models (LSTM and Transformer) for stock market forecasting, including data preprocessing, model training, and evaluation.
+- **`First_draft___Research_Methodology.pdf`**: A draft research report outlining the methodology, objectives, and initial findings for the project, including comparisons between the LSTM and Transformer models for stock price forecasting.
 
 ## Installation
 
@@ -38,46 +18,31 @@ This folder contains the dataset used in the project:
    cd stock-market-prediction
    ```
 
-2. Install the required dependencies:
+2. Install the necessary dependencies:
+   - Ensure you have Jupyter Notebook installed and use the following command to install required Python libraries:
    ```bash
    pip install -r requirements.txt
    ```
 
-3. Download the stock data:
-   - Run the `data_preprocessing.py` script to fetch the latest stock data from Yahoo Finance.
+3. Open the Jupyter Notebook:
+   ```bash
+   jupyter notebook Transformers_model_01.ipynb
+   ```
 
 ## Usage
 
-1. **Preprocessing**:
-   Run the `data_preprocessing.py` script to clean and preprocess the stock data.
-   ```bash
-   python src/data_preprocessing.py
-   ```
-
-2. **Training the Models**:
-   - To train the LSTM model:
-     ```bash
-     python src/train.py --model lstm
-     ```
-   - To train the Transformer model:
-     ```bash
-     python src/train.py --model transformer
-     ```
-
+1. **Data Preprocessing**:
+   The notebook begins by collecting and preprocessing stock price data from Yahoo Finance using the `yfinance` library.
+   
+2. **Model Training**:
+   The notebook includes code to train both LSTM and Transformer models. Adjust the hyperparameters as necessary to optimize performance.
+   
 3. **Evaluation**:
-   After training, you can evaluate the models on test data:
-   ```bash
-   python src/evaluation.py --model lstm
-   python src/evaluation.py --model transformer
-   ```
+   The models are evaluated using key metrics such as Root Mean Square Error (RMSE) and Mean Absolute Percentage Error (MAPE).
 
 ## Results
 
-The project compares the LSTM and Transformer models in predicting stock prices. Performance is evaluated using two metrics:
-- **Root Mean Square Error (RMSE)**
-- **Mean Absolute Percentage Error (MAPE)**
-
-The project includes visualizations of predicted vs actual stock prices to help understand model performance.
+The notebook provides a detailed comparison between the LSTM and Transformer models, displaying the prediction performance on historical stock data.
 
 ## License
 
@@ -88,3 +53,5 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - Stefano Tonini
 - Jacopo Dallafior
 ```
+
+You can copy and paste this directly into your repository's `README.md` file. Let me know if you need any more adjustments!
