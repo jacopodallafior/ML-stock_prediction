@@ -1,4 +1,3 @@
-
 ```markdown
 # Stock Market Prediction with LSTM and Transformer Models
 
@@ -10,11 +9,9 @@ The project is organized as follows:
 
 ```
 - src/
-  - data_preprocessing.py
   - lstm_model.py
   - transformer_model.py
-  - train.py
-  - evaluation.py
+
 - README.md
 - requirements.txt
 - data/
@@ -91,5 +88,3 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - Stefano Tonini
 - Jacopo Dallafior
 ```
-
-This README file provides an overview of your project, how to use it, and other essential details. Let me know if you need further adjustments!
